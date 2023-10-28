@@ -1,2 +1,2 @@
-# discord_management_bot
+# Discord Management Bot
 Discord bot with management capabilities.
