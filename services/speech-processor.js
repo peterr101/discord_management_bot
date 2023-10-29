@@ -11,10 +11,7 @@ export class SpeechProcessor {
 
   async initialize(threshold = TOXICITY_THRESHOLD) {
     if (!this.toxicityModel) {
-      this.toxicityModel = await toxicity.load(
-        threshold
-        // UNACCEPTABLE_TOXIC_CATEGORIES_SET
-      );
+      this.toxicityModel = await toxicity.load(threshold);
     }
     return this.toxicityModel;
   }
